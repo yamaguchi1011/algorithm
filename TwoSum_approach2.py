@@ -13,3 +13,13 @@ class Solution:
       # もしcomplementがhashmap内に存在し、かつcomplementのインデックスが現在のインデックスiと異なる場合は、returnでその条件を満たすインデックスを返す。
             if complement in hashmap and hashmap[complement]!=i:
                 return[i,hashmap[complement]]
+    # テスト用のリストと目標値を指定して twoSum メソッドを呼び出す
+
+# 下記ターミナル実行用
+solution_instance = Solution()
+
+# テスト用のリストと目標値を指定して twoSum メソッドを呼び出す
+result = solution_instance.twoSum([2, 7, 11, 15], 9)
+# result = solution_instance.twoSum([3,2,4], 6)
+# result = solution_instance.twoSum([3,3], 6)
+print(result)
