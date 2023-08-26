@@ -49,7 +49,11 @@ list2.next = ListNode(3)
 list2.next.next = ListNode(4)
 
 result = solution_instance.mergeTwoLists(list1, list2)
-print(result)
+current = result
+while current:
+    print(current.val, end=" -> ")
+    current = current.next
+print("None")
 
 # ノードっていう概念があって、ListNode（連結リスト）のクラスを自分で作って使う。連結リストとは、データ構造の一種であるリストの中で自分の次、および前の要素を示す情報（リンク情報）をもつことで要素を連結（リンク）させたリストのことである。それはval（ノードが保持する値を示す属性）やnext(次のノードへのポインタを示す属性)などを持っている。
 # デメリット
