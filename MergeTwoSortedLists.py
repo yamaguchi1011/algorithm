@@ -14,7 +14,7 @@ class ListNode:
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         # 新しい連結リストのヘッドとなるダミーノードを作成
-        dummy_head = ListNode(0)
+        dummy_head = ListNode(0)#0を入れない場合はNoneがデフォルトで設定される。ダミーノードは基本的にnextだけが操作の対象になるから0を入れなくてもいいけど、理解しやすさのために明示的な初期化が行われていることを示して読み手がわかりやすいようにしている。
         current = dummy_head
 
         # 両方のリストが空でない限りループ(各リストの要素が空になっていないかを見ている)
