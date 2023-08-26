@@ -48,6 +48,10 @@ list2 = ListNode(1)
 list2.next = ListNode(3)
 list2.next.next = ListNode(4)
 
+# 単純にprint(result)で連結リストの先頭ノードを指すポインタは表示できない。
+# result は mergeTwoLists メソッドの戻り値であり、連結リストの先頭ノードを指すポインタです。
+# 連結リストの各ノードの値を表示するには、result をたどりながらノードの値を取得して表示する必要があります。
+# このコードは、current ポインタを使って連結リストのノードをたどり、各ノードの値を表示しています。表示は「値 -> 値 -> ... -> None」という形式で行われます。
 result = solution_instance.mergeTwoLists(list1, list2)
 current = result
 while current:
@@ -55,6 +59,8 @@ while current:
     current = current.next
 print("None")
 
+
+# 感想
 # ノードっていう概念があって、ListNode（連結リスト）のクラスを自分で作って使う。連結リストとは、データ構造の一種であるリストの中で自分の次、および前の要素を示す情報（リンク情報）をもつことで要素を連結（リンク）させたリストのことである。それはval（ノードが保持する値を示す属性）やnext(次のノードへのポインタを示す属性)などを持っている。
 # デメリット
 # リンクを辿らないと各々の要素にアクセスができない！
