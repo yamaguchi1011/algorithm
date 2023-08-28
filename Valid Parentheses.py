@@ -38,7 +38,7 @@ result = solution_instance.isValid(s = "([])")
 print(result)
 
 # 基本的な性質は後入れ先だし。
-# stackを使う場面は
+# stackを使う場面は,
 # ・括弧の対応チェック
 # ・関数呼び出しの履歴
 # ・逆ポーランド記法の式評価
