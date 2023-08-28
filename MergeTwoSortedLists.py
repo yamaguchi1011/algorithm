@@ -5,7 +5,7 @@
 # 両リストのノード数は[0, 50]の範囲にある。
 # -100 <= Node.val <= 100
 # list1とlist2の両方が減らない順序でソートされている。
-from typing import Optional
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
