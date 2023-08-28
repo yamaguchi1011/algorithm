@@ -20,8 +20,7 @@ class Solution:
         # _とnumsの要素数が異なる場合はTrueを返す
         if len(_) != len(nums):
             return True
-        else:
-            return False
+        return False
 
 
 
