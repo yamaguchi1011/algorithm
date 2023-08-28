@@ -10,7 +10,7 @@
 #                 if nums[i] == nums[j]:
 #                   return True
 #         return False
-￥
+
 # set関数使って、重複のない集合を作成し、その集合の要素数と、元のリストの要素数を比べて、同じであればTrueを返す。
 
 class Solution:
