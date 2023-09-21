@@ -38,7 +38,6 @@ class Solution:
     def isPowerOfTwo(self, n: int) -> bool:
         if n<=0:
             return 0
-        
         return (n&(n-1))==0
 
 
@@ -46,3 +45,9 @@ solution_instance = Solution()
 
 result = solution_instance.isPowerOfTwo(n = 16)
 print(result)
+
+# ビットワイズ演算でnとn-1の最上位ビットを比較している
+# ２のべき乗の整数は２進数表現において最上位ビットが立っている。（最も左側の１ビット）
+# ２進数表現では2は１０で、４は１００、８は１０００、１６は１００００になる
+# つまりnが４だった場合にn-1は３になる。
+# ２進数表現では１１になる。
